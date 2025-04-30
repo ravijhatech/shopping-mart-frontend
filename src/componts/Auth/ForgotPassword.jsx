@@ -33,7 +33,7 @@ const ForgotPassword = () => {
 
   const handleResendOtp = async () => {
     try {
-      const res = await axios.post('https://shopping-martbackend.onrender.com/api/v1/resend-otp', { email: form.email });
+      const res = await axios.post('/api/v1/resend-otp', { email: form.email });
       // write resend  new otp send messages here write
       toast.success("Send OTP Your Email !");
       setTimer(100);

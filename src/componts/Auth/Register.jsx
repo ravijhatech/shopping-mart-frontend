@@ -17,7 +17,7 @@ const Register = () => {
   const handleSubmit = async e => {
     e.preventDefault();
     try {
-      await axios.post('https://shopping-martbackend.onrender.com/api/v1/register', form);
+      await axios.post('/api/v1/register', form);
       toast.success('Registration successful!');
       setForm({
         name:"",
